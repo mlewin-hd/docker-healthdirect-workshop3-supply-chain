@@ -55,6 +55,7 @@ jobs:
           image: ${{ env.IMAGE }}
           only-severities: critical,high
           write-comment: false
+          exit-code: true
           # Turn this scan into a policy GATE by adding:  exit-code: true
           # The run then fails when matching vulnerabilities are present.
 
